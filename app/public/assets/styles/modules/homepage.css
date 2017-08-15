@@ -1,0 +1,15 @@
+.homepage {
+	background: url("../../assets/images/movie-background-900w.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	/*position: relative;*/
+
+	&__intro {
+		position: absolute;
+		color: white;
+		top: 25%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}

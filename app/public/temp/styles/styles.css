@@ -448,3 +448,21 @@ body {
 	background-color: #FFF;
 	color: #333;
 }
+
+.homepage {
+	background: url("../../assets/images/movie-background-900w.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+
+/*position: relative;*/
+
+.homepage__intro {
+  position: absolute;
+  color: white;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
