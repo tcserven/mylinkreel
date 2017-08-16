@@ -1,14 +1,50 @@
 .homepage {
-	background: url("../../assets/images/movie-background-900w.jpg") no-repeat;
+	background: url("../../assets/images/movie-background.jpg") no-repeat;
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
 	/*position: relative;*/
 
+	&__title {
+		position: absolute;
+		text-align: center;
+		color: white;
+		top: 10%;
+		left: 50%;
+		font-size: 5rem;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
 	&__intro {
 		position: absolute;
+		text-align: center;
 		color: white;
-		top: 25%;
+		top: 20%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	&__middle {
+		position: absolute;
+		color: white;
+		top: 40%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	&__contact {
+		position: absolute;
+		color: red;
+		text-align: center;
+		top: 60%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	&__email {
+		position: absolute;
+		color: white;
+		top: 75%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 	}
