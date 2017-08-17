@@ -3,49 +3,56 @@
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
-	/*position: relative;*/
+	color: white;
+	text-align: center;
+	text-shadow: 3px 3px 1px black;
 
-	&__title {
-		position: absolute;
-		text-align: center;
-		color: white;
-		top: 10%;
-		left: 50%;
-		font-size: 5rem;
-		transform: translateX(-50%) translateY(-50%);
+
+	&__title {	
+		font-size: 2rem;
+		margin: 0;
+		padding-top: 50px;
+
+		@mixin atSmall {
+			padding-top: 150px;	
+			font-size: 3.5rem;
+		}
+		
 	}
 
-	&__intro {
-		position: absolute;
-		text-align: center;
-		color: white;
-		top: 20%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
+	&__intro {	
+		font-size: 0.8rem;
+
+		@mixin atSmall {
+			border-radius: 5px;
+			background-color: rgba(255,255,255,0.5);
+			margin: 50px 0;
+			font-size: 2rem;
+		}
 	}
 
-	&__middle {
-		position: absolute;
-		color: white;
-		top: 40%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-	}
-
+	
 	&__contact {
-		position: absolute;
-		color: red;
-		text-align: center;
-		top: 60%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		font-size: 0.8rem;
+
+		@mixin atSmall {	
+			margin: 40px 0;
+			font-size: 1.5rem;
+		}
 	}
 
-	&__email {
-		position: absolute;
-		color: white;
-		top: 75%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
+	&__email span {
+		font-size: 1rem;
+
+		@mixin atSmall {	
+			margin: 10px auto;
+			border: none;
+			background: rgba(255,72,9,0.9);
+			color: white;
+			padding: 10px;
+			font-size: 1.2rem;
+			border-radius: 5px;
+			text-decoration: none;
+		}
 	}
 }
