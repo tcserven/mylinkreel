@@ -47,12 +47,19 @@
 		@mixin atSmall {	
 			margin: 10px auto;
 			border: none;
-			background: rgba(255,72,9,0.9);
-			color: white;
+			background: rgb(8, 114, 165);
+			/*color: white;*/
 			padding: 10px;
 			font-size: 1.2rem;
 			border-radius: 5px;
 			text-decoration: none;
 		}
+	}
+
+	&__email-link {
+		text-decoration: none;
+		color: white;
+
+		
 	}
 }

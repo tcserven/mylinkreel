@@ -508,13 +508,17 @@ body {
   .homepage__email span {
     margin: 10px auto;
     border: none;
-    background: rgba(255,72,9,0.9);
-    color: white;
+    background: rgb(8, 114, 165);/*color: white;*/
     padding: 10px;
     font-size: 1.2rem;
     border-radius: 5px;
     text-decoration: none;
   }
+}
+
+.homepage__email-link {
+  text-decoration: none;
+  color: white;
 }
 
 .wrapper {
@@ -537,16 +541,47 @@ body {
 	width: 100%;
 	height: 50px;
 	position: absolute;
-	z-index: 2;
-	background-color: white;
+
+	
 }
 
 .header__nav {
   margin: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
-.header__nav-li img {
-  height: 125px;
+.header__nav img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+@media(min-width: 530px) {
+
+  .header__nav img {
+    left: 5%;
+  }
+}
+
+.header__contact a {
+  display: none;
+}
+
+@media(min-width: 530px) {
+
+  .header__contact a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 15px 7%;
+  }
+}
+
+.header__contact a:hover {
+  color: rgb(8, 114, 165);
+  font-weight: 700;
 }

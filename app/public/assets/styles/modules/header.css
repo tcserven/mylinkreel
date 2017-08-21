@@ -2,16 +2,41 @@
 	width: 100%;
 	height: 50px;
 	position: absolute;
-	z-index: 2;
-	background-color: white;
+
 
 	&__nav {
 		margin: 0;
-		width:100%;
+		width: 100%;
 		height: 100%;
+
+		& img {
+			transform: scale(1.1);
+			position: absolute;
+			top: 0;
+			left: 10px;
+
+			@mixin atSmall {
+				left: 5%;
+			}
+		}
 	}
 
-	&__nav-li img {
-		height: 125px;
+	&__contact a {
+		display: none;
+
+		@mixin atSmall {
+			display: block;
+			text-decoration: none;
+			color: white;
+			float: right;
+			margin: 15px 7%;
+		}
+
+		&:hover {
+			color: rgb(8, 114, 165);
+			font-weight: 700;
+		}
 	}
+
+	
 }
