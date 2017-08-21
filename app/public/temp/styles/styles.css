@@ -468,8 +468,8 @@ body {
 @media(min-width: 530px) {
 
   .homepage__title {
-    padding-top: 150px;
-    font-size: 3.5rem;
+    padding-top: 200px;
+    font-size: 4.5rem;
   }
 }
 
@@ -480,9 +480,8 @@ body {
 @media(min-width: 530px) {
 
   .homepage__intro {
-    border-radius: 5px;
-    background-color: rgba(255,255,255,0.5);
-    margin: 50px 0;
+    border-radius: 5px;/*background-color: rgba(255,255,255,0.5);*/
+    margin: 150px 0;
     font-size: 2rem;
   }
 }
@@ -510,10 +509,14 @@ body {
     border: none;
     background: rgb(8, 114, 165);/*color: white;*/
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 5px;
     text-decoration: none;
   }
+}
+
+.homepage__email span:hover {
+  font-size: 2rem;
 }
 
 .homepage__email-link {
@@ -552,17 +555,17 @@ body {
 }
 
 .header__nav img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 10px;
 }
 
 @media(min-width: 530px) {
 
   .header__nav img {
-    left: 5%;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    left: 9%;
   }
 }
 
@@ -581,7 +584,6 @@ body {
   }
 }
 
-.header__contact a:hover {
-  color: rgb(8, 114, 165);
+.header__contact a:hover {/*color: rgb(8, 114, 165);*/
   font-weight: 700;
 }

@@ -10,13 +10,13 @@
 		height: 100%;
 
 		& img {
-			transform: scale(1.1);
 			position: absolute;
-			top: 0;
+			top: 10px;
 			left: 10px;
 
 			@mixin atSmall {
-				left: 5%;
+				transform: scale(1.2);
+				left: 9%;
 			}
 		}
 	}
@@ -33,7 +33,7 @@
 		}
 
 		&:hover {
-			color: rgb(8, 114, 165);
+			/*color: rgb(8, 114, 165);*/
 			font-weight: 700;
 		}
 	}
