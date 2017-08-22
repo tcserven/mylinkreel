@@ -11,59 +11,110 @@
 	&__title {	
 		font-size: 2rem;
 		margin: 0;
-		padding-top: 50px;
+		padding-top: 150px;
 
 		@mixin atSmall {
+			font-size: 2.8rem;
+		}
+
+		@mixin atMedium {
 			padding-top: 200px;	
-			font-size: 4.5rem;
+			font-size: 3.5rem;
 		}
 		
 	}
 
 	&__intro {	
 		font-size: 0.8rem;
+		margin: 50px 10px;
+		font-weight: 300;
 
 		@mixin atSmall {
+			font-size: 1.5rem;
+		}
+
+		@mixin atMedium {
 			border-radius: 5px;
 			/*background-color: rgba(255,255,255,0.5);*/
-			margin: 150px 0;
+			margin: 100px 0;
 			font-size: 2rem;
+		}
+
+		&--no-margin {
+			padding-top: 150px;
+			margin: 0;
 		}
 	}
 
 	
 	&__contact {
 		font-size: 0.8rem;
+		font-weight: 300;
+		margin: 40px 0;
 
 		@mixin atSmall {	
+			font-size: 1rem;
+		}
+
+		@mixin atMedium {
 			margin: 40px 0;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}
 	}
 
 	&__email span {
 		font-size: 1rem;
+		margin: 10px auto;
+		border: none;
+		background: rgb(8, 114, 165);
+		/*color: white;*/
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-decoration: none;
 
 		@mixin atSmall {	
-			margin: 10px auto;
-			border: none;
-			background: rgb(8, 114, 165);
-			/*color: white;*/
-			padding: 10px;
 			font-size: 1.3rem;
-			border-radius: 5px;
-			text-decoration: none;
 		}
 
-		&:hover {
-			font-size: 2rem;
-		}
 	}
 
 	&__email-link {
 		text-decoration: none;
 		color: white;
+	}
 
+	&__goal {
+		text-shadow: none;
+		font-size: 2rem;
+		color: black;
+		font-weight: 700;
+		background-color: rgba(255,255,255,0.5);
+		border-radius: 20px;
+	}
+
+	&__info {
+		font-size: 0.8rem;
+		margin: 50px 10px;
+		font-weight: 300;
 		
+
+		@mixin atSmall {
+			padding: 20px 0;
+			font-size: 1.5rem;
+		}
+
+		@mixin atMedium {
+			border-radius: 5px;
+			margin: 0;
+			font-size: 1.5rem;
+		}
+
+		&--padding-top {
+			padding-top: 100px;
+
+			@mixin atSmall {
+				padding-top: 180px;
+			}
+		}
 	}
 }
