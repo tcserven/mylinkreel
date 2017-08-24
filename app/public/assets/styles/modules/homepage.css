@@ -94,7 +94,7 @@
 
 	&__info {
 		font-size: 0.8rem;
-		margin: 50px 10px;
+		margin: 0 10px;
 		font-weight: 300;
 		
 
@@ -113,7 +113,11 @@
 			padding-top: 100px;
 
 			@mixin atSmall {
-				padding-top: 180px;
+				padding-top: 150px;
+			}
+
+			@mixin atMedium {
+				padding-top: 250px;
 			}
 		}
 	}

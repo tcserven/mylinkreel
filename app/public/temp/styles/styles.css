@@ -561,7 +561,7 @@ body {
 
 .homepage__info {
   font-size: 0.8rem;
-  margin: 50px 10px;
+  margin: 0 10px;
   font-weight: 300;
 }
 
@@ -589,7 +589,14 @@ body {
 @media(min-width: 530px) {
 
   .homepage__info--padding-top {
-    padding-top: 180px;
+    padding-top: 150px;
+  }
+}
+
+@media(min-width: 800px) {
+
+  .homepage__info--padding-top {
+    padding-top: 250px;
   }
 }
 
