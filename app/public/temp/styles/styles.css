@@ -561,15 +561,16 @@ body {
 
 .homepage__info {
   font-size: 0.8rem;
-  margin: 0 10px;
+  margin: 0;
   font-weight: 300;
 }
 
 @media(min-width: 530px) {
 
   .homepage__info {
+    margin: 0 10px;
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -578,6 +579,13 @@ body {
   .homepage__info {
     border-radius: 5px;
     margin: 0;
+    font-size: 1.3rem;
+  }
+}
+
+@media(min-width: 980px) {
+
+  .homepage__info {
     font-size: 1.5rem;
   }
 }
@@ -596,7 +604,14 @@ body {
 @media(min-width: 800px) {
 
   .homepage__info--padding-top {
-    padding-top: 250px;
+    padding-top: 160px;
+  }
+}
+
+@media(min-width: 980px) {
+
+  .homepage__info--padding-top {
+    padding-top: 200px;
   }
 }
 

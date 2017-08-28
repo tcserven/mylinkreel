@@ -94,18 +94,23 @@
 
 	&__info {
 		font-size: 0.8rem;
-		margin: 0 10px;
+		margin: 0;
 		font-weight: 300;
 		
 
 		@mixin atSmall {
+			margin: 0 10px;
 			padding: 20px 0;
-			font-size: 1.5rem;
+			font-size: 1rem;
 		}
 
 		@mixin atMedium {
 			border-radius: 5px;
 			margin: 0;
+			font-size: 1.3rem;
+		}
+
+		@mixin atLarge {
 			font-size: 1.5rem;
 		}
 
@@ -117,7 +122,11 @@
 			}
 
 			@mixin atMedium {
-				padding-top: 250px;
+				padding-top: 160px;
+			}
+
+			@mixin atLarge {
+				padding-top: 200px;
 			}
 		}
 	}
